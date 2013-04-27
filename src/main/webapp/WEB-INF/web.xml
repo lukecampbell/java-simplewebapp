@@ -1,0 +1,39 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>simple</servlet-name>
+    <servlet-class>com.asascience.simpleweb.SimpleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>simple</servlet-name>
+    <url-pattern>/simple</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>Coffee</servlet-name>
+      <servlet-class>com.asascience.simpleweb.CoffeeSelect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Coffee</servlet-name>
+      <url-pattern>/SelectCoffee.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>SignalGenerator</servlet-name>
+      <servlet-class>com.asascience.simpleweb.SignalGenerator</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>SignalGenerator</servlet-name>
+      <url-pattern>/signal</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>JSONResponse</servlet-name>
+      <servlet-class>com.asascience.simpleweb.JSONResponse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>JSONResponse</servlet-name>
+      <url-pattern>/json</url-pattern>
+  </servlet-mapping>
+</web-app>
